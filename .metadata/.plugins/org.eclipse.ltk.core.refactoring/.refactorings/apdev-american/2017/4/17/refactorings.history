@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;apdev-american/src/main/app/apdev-americab.xml&apos; to &apos;apdev-american.xml&apos;" description="Rename resource &apos;apdev-americab.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/app/apdev-americab.xml" name="apdev-american.xml" stamp="1493268490887" updateReferences="true"/>
+</session>
