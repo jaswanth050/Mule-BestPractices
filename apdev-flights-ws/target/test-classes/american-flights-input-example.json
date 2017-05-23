@@ -1,0 +1,31 @@
+%dw 1.0
+%Input application/json
+---
+[
+   {
+   "toAirport": "LAX",
+   "planeType": "747",
+   "code2": "abc",
+   "totalSeats": 1,
+   "takeOffDate": |2016-01-20|,
+   "fromAirport": "MUA",
+   "price": 1,
+   "airlineName": "American Airlines",
+   "seatsAvailable": 1,
+   "ID": 1,
+   "code1": "1234"
+},
+   {
+   "toAirport": "LAX",
+   "planeType": "747",
+   "code2": "abc",
+   "totalSeats": 1,
+   "takeOffDate": |2016-01-20|,
+   "fromAirport": "MUA",
+   "price": 1,
+   "airlineName": "American Airlines",
+   "seatsAvailable": 1,
+   "ID": 1,
+   "code1": "1234"
+}
+]
