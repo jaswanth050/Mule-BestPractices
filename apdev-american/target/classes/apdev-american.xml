@@ -14,10 +14,8 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
     <db:mysql-config name="MySQL_Configuration" host="mudb.mulesoft-training.com" port="3306" user="mule" password="mule" database="training" doc:name="MySQL Configuration"/>
     <flow name="getFlightsFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/flights" allowedMethods="GET" doc:name="HTTP"/>
-        <db:select config-ref="MySQL_Configuration" doc:name="Database">
-            <db:parameterized-query><![CDATA[SELECT * 
-FROM american]]></db:parameterized-query>
-        </db:select>
+        <db:bulk-execute config-ref="MySQL_Configuration" doc:name="Database">
+        </db:bulk-execute>
         <dw:transform-message doc:name="Transform Message" metadata:id="9794cd6d-8e29-4596-8ce0-61eeae07871f">
             <dw:input-payload doc:sample="sample_data\list_map.dwl"/>
             <dw:set-payload><![CDATA[%dw 1.0
